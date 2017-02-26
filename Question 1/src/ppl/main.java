@@ -16,7 +16,7 @@ public class main
 
 		ArrayList<boy> Boy = new ArrayList<boy>();
 		ArrayList<girl> Girl = new ArrayList<girl>();
-		files_generator(Boy, Girl, 10000, 10000);
+		files_generator(Boy, Girl, 10000, 10000, 10000);
 		find_couple(Boy, Girl);
            
 
@@ -124,12 +124,66 @@ public class main
 		file.close();
 	}
 
+	public static void gift_generator(int no_of_gifts) throws IOException
+	{
+                 Random rand;
+      
+                rand = new Random();
+		int price;
+		int value;
+		int i;
+		int luxury_rating = 0;
+		int difficulty = 0;
+		int util_val = 0;
+                File giftrecord =  new File("gift_record.txt");
+                FileWriter file = new FileWriter(giftrecord);
+		String type = new String(new char[15]);
+		String[] type_of_gifts = {"Essential gift","Luxury gift","Utility gift"};
+		String Class = "ABC";
+		char util_class = 0;
+		for (i = 1;i <= no_of_gifts;i++)
+		{
+			type = type_of_gifts[rand.nextInt(1000) % 3];
+			price = rand.nextInt(1000)  % 100 + 1;
+			value = rand.nextInt(1000)  % 10 + 1;
+			
+                        file.write("gifts :- "+i+"\n");
+                        file.write("type :- " + type + "\n");
+			
+                         file.write("price :- " + price + "\n");
+			
+                         file.write("value :- " + value + "\n");
+			if (type.charAt(0) == 'L')
+			{
+				luxury_rating =rand.nextInt(1000) % 10 + 1;
+				difficulty = rand.nextInt(1000)  % 10 + 1;
+                                 file.write("luxury_rating :- " + luxury_rating + "\n");
+		
+                                 file.write("difficult_to_obtain_the_gift :- " + difficulty + "\n");
+			}
+			else if (type.charAt(0) == 'U')
+			{
+				util_val = rand.nextInt(1000)  % 10 + 1;
+				util_class =  Class.charAt(rand.nextInt(1000)  % 3);
+			
+                                 file.write("files_generator value :- " + util_val + "\n");
+			
+                                  file.write("files_generator class :- " + util_class + "\n");
+			}
 
-	public static void files_generator(ArrayList<boy> Boy, ArrayList<girl> Girl, int no_of_boys, int no_of_girls)
+			file.write("\n");
+			gift Newgift = new gift(price, value, type, luxury_rating, difficulty, util_val, util_class);
+
+		}
+		file.close();
+	}
+
+	public static void files_generator(ArrayList<boy> Boy, ArrayList<girl> Girl, int no_of_boys, int no_of_girls, int no_of_gifts)
 	{
             try {
                 boy_generator(Boy, no_of_boys);
                 girl_generator(Girl, no_of_girls);
+                gift_generator(no_of_gifts);
             } catch (IOException ex) {
                 Logger.getLogger(main.class.getName()).log(Level.SEVERE, null, ex);
             }
