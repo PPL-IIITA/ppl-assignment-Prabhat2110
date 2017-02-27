@@ -20,14 +20,13 @@ extract ppl-assignment-Prabhat2110-master.zip
 
 cd ppl-assignment-Prabhat2110-master.zip
 
-
-#For Question 1 :
+For Question 1 :
 
 cd "Question 1"/bin
 
 On Command Promt : java ppl.main
 
-#For Question 2 :
+For Question 2 :
 
 cd "Question 2"/bin
 
