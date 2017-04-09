@@ -1,8 +1,8 @@
 # ppl-assignment-Prabhat2110
 
-# PRABHAT RUDRAPRATAP SINGH: IIT2015057
+## PRABHAT RUDRAPRATAP SINGH: IIT2015057
 
-# BUILD TOOLS:
+## BUILD TOOLS:
 
 OS : Windows 10
 
@@ -32,37 +32,42 @@ cd "Question 2"/bin
 
 On Command Promt : java ppl.main
 ```
-
-# Logs :
-
-
-## For Question 1:
+## For Question 3 :
 ```
+cd "Question 3"/bin
 
-cd "Question 1"/
-
-- log.txt will be created after executing main class
+On Command Promt : java ppl.main
 ```
-
-## For Question 2 :
+## For Question 4 :
 ```
+cd "Question 4"/bin
 
-cd "Question 2"/
+On Command Promt : java ppl.main
+```
+## For Question 5 :
+```
+cd "Question 5"/bin
 
-log.txt , gift_exchange.txt , k_most_compatible_couples.txt , k_most_happiest_couples.txt will be created after executing main class
+On Command Promt : java ppl.main
+```
+## For Question 6 :
+```
+cd "Question 6"/bin
+
+On Command Promt : java ppl.main
 ```
 
 # Class Diagram :
 
 
-The class diagram for each question has been made separately and can be found in the respective folder of the questions, Question 1 and Question 2. 
+The class diagram for each question has been made separately and can be found in the respective folder of the questions. 
 
-Names of the jpg files are: "Class Diagram Q1.jpg" and "Class Diagram Q2.jpg"
+Names of the jpg files are: "Class Diagram Q1.jpg" , "Class Diagram Q2.jpg" , "Class Diagram Q3.jpg" , "Class Diagram Q4.jpg" , "Class Diagram Q5.jpg" and "Class Diagram Q6.jpg" .
 
 
 # Documentation :
 
 
-Documentation of each question is done separately and can be found in the respective folder of the questions, Question 1 and Question 2. 
+Documentation of each question is done separately and can be found in the respective folder of the questions. 
 
-Path of folders containing documentation are: "Question 1"/doc and "Question 2"/doc.
+Path of folders containing documentation are: "Question 1"/doc , "Question 2"/doc , "Question 3"/doc , "Question 4"/doc , "Question 5"/doc , "Question 6"/doc , .
