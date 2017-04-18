@@ -57,6 +57,10 @@ cd "Question 6"/bin
 On Command Promt : java ppl.main
 ```
 
+#QUESTION 11 :
+```
+Exception Handling is already used in all of my above codes. Necessary exceptions have been thrown in all the classes.
+```
 # Class Diagram :
 
 
